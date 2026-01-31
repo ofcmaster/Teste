@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<title>Tecnologia | Master Vendas</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
+  }
+  body {
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: #fff;
+  }
+
+  header {
+    text-align: center;
+    padding: 40px 20px;
+  }
+  header p {
+    color: #d1d5db;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px 40px; /* 30px vertical, 40px horizontal */
+    margin-top: 30px;
+  }
+
+  .card {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(10px);
+    border-radius: 18px;
+    padding: 30px 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    min-height: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+  }
+
+  .card h3 {
+    color: #facc15;
+    margin-bottom: 12px;
+    font-weight: 700;
+  }
+  .card p {
+    color: #e5e7eb;
+    font-size: 1rem;
+    margin-bottom: 18px;
+  }
+
+  .card a {
+    display: inline-block;
+    margin-top: auto;
+    background: linear-gradient(135deg, #f59e0b, #f97316);
+    color: #000;
+    padding: 10px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .card a:hover {
+    transform: scale(1.12);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.45);
+  }
+
+  .nav {
+    display: flex;
+    gap: 25px;
+    margin: 50px 0;
+  }
+
+  .nav a {
+    flex: 1;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 16px 0;
+    border-radius: 40px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+  }
+
+  .nav a:hover {
+    background: #f59e0b;
+    color: #000;
+  }
+
+  @media (max-width: 900px) {
+    .grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px 30px;
+    }
+  }
+  @media (max-width: 600px) {
+    .grid {
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+  }
+
+  footer {
+    text-align: center;
+    padding: 15px 0;
+    font-size: 0.85rem;
+    color: #9ca3af;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>Produtos</h1>
+  <p>Os melhores produtos para você</p>
+</header>
+
+<main class="container">
+  <div class="grid">
+    <div class="card">
+      <h3>PC Gamer</h3>
+      <p>AMD Ryzen 5 5600G, 16GB DDR4 3200MHz, Radeon Vega 7, SSD 480GB, Fonte 500W.</p>
+      <a href="https://s.shopee.com.br/2qOl76Nn38" rel="noopener noreferrer">Ver produto</a>
+    </div>
+
+    <div class="card">
+      <h3>Xiaomi Poco X7 Pro</h3>
+      <p>512GB / 256GB +12 Ram 5G NFC.</p>
+      <a href="https://s.shopee.com.br/3VeRvc6XGC" target="_blank" rel="noopener noreferrer">Ver produto</a>
+    </div>
+
+    <div class="card">
+      <h3>Air Fryer</h3>
+      <p>Fritadeira Elétrica Oster Inox Compact 4,6L Sem Óleo.</p>
+      <a href="https://s.shopee.com.br/5AmfuyjiTG" target="_blank" rel="noopener noreferrer">Ver produto</a>
+    </div>
+
+    <div class="card">
+      <h3>Potes Vidro</h3>
+      <p>Conjunto 04 Potes Vidro Hermético Mantimentos Marmita 640ml.</p>
+      <a href="https://s.shopee.com.br/9Uvf53ZGBi" target="_blank" rel="noopener noreferrer">Ver produto</a>
+    </div>
+
+    <div class="card">
+      <h3>Utensílios De Cozinha</h3>
+      <p>Kit Jogo Utensílios De Cozinha Silicone 12 Peças Cabo Madeira Panelas Antiaderente Cozinha.</p>
+      <a href="https://s.shopee.com.br/8zzOUKRure" target="_blank" rel="noopener noreferrer">Ver produto</a>
+    </div>
+
+    <div class="card">
+      <h3>Torneira Gourmet</h3>
+      <p>montada na parede preto Torneira Premium com giro de 360° Torneiras pull-out Aço inox 304.</p>
+      <a href="https://s.shopee.com.br/W0qMoZRum" target="_blank" rel="noopener noreferrer">Ver produto</a>
+    </div>
+  </div>
+
+  <div class="nav">
+    <a href="Inicio.html">⬅ Início</a>
+    <a href="Produtos1.html">Próxima ➡</a>
+  </div>
+</main>
+
+<footer>
+  © 2026 Master Vendas — Todos os direitos reservados.
+</footer>
+
+</body>
+</html>
